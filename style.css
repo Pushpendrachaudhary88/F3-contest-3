@@ -1,0 +1,140 @@
+body{
+    background-color: white;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9bd6d6;
+}
+.container .line{
+    background-color: rgb(204 207 232);
+}
+
+
+ .container .incline{
+    position: absolute;
+    width: 95%;
+    top: 60%;
+    height: 5px; 
+    background-color: rgb(204 207 232);
+    transform: rotate(15deg);
+    z-index: 1;
+ }
+
+
+.sign-up-page{
+    position: absolute;
+    top: 20%;
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 60vh;
+    z-index:2;
+}
+.form-group input{
+    margin-top: 10px 10px;
+    width: 250px;
+    height: 25px;
+    border: 1px solid rgb(223, 216, 216);
+    border-radius: 3px;
+    outline: none;
+}
+#signup-btn{
+    margin-top: 15px;
+    width: 257px;
+    line-height: 28px;
+    border-radius: 3px;
+    color: white;
+    background-color: rgb(81,74,239);
+    outline: none;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+#hand-wave{
+    color: rgb(246, 204, 107);
+}
+.up:hover{
+    cursor: pointer;
+}
+
+
+.profile-page{
+    display: none;
+    position: absolute;
+    top:15%;
+    padding: 0px 10px;
+    background-color: white;
+    width: 300px;
+    height: 70vh;
+    z-index:3;
+}
+#profile-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 3px;
+}
+#signup-message{
+    margin-left: 50px;
+    color: rgb(81,74,239); 
+    font-size: 24px;
+}
+.profile-page h4{
+    margin-left: 120px;
+}
+#icon i{
+    margin-left: 90px;
+}
+#logout-btn{
+    margin-top: 15px;
+    width: 257px;
+    line-height: 28px;
+    border-radius: 3px;
+    color: white;
+    background-color: rgb(81,74,239);
+    outline: none;
+    border: none;
+    margin-left: 20px;
+}
+.container .line{
+    position: absolute;
+    width: 200%;
+    height: 90vh;
+    top: 60%;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(15deg);
+    z-index: 0;
+}
+
+@media only screen and (max-width:600px){
+    .sign-up-page{
+        padding: 0px 30px;
+        width: 250px;
+    }
+    .items input{
+        margin-top: 10px 10px;
+        width: 250px;
+        height: 20px;
+        border: 1px solid rgb(223, 216, 216);
+        border-radius: 3px;
+        outline: none;
+    }
+    #icon i{
+        margin-left: 110px;
+        font-size: 80px;
+    }
+}
+  

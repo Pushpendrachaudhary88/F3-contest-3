@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div class="container">
+        <div class="line"></div>
+        <div class="incline"></div>
+        <div class="sign-up-page">
+            <h5>Welcome Back! <span id="hand-wave"><i class="fa-solid fa-hands-clapping"></i></span></h5>
+            <h2>Sign up to your account</h2>
+          <div class="form-group">
+            <label for="username">Your Name</label><br>
+            <input type="text" id="username" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label><br>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label><br>
+            <input type="password" id="password" required>
+          </div>
+          <div class="form-group">
+            <label for="password1">Confirm Password</label><br>
+            <input type="password" id="password1" required>
+          </div>
+          <button id="signup-btn">CONTINUE</button>
+          <p style="margin-left: 15px;color: rgb(81,74,239);">Error: All fields are mandatory!</p>
+          <p style="margin-left: 25px; font-size: 12px;">Don't have an account? 
+          <span style="color: rgb(81,74,239);" class="up">Sign up</span></p>
+        </div>
+        
+        <div class="profile-page">
+            <span id="signup-message" >Signup successful!</span>
+            <h4>Profile</h4>
+            <p style="color: rgb(81,74,239);" id="icon"><i class="far fa-user fa-8x" id="user-logo"></i></p>
+            <div id="profile-details"></div>
+            <button id="logout-btn" >Logout</button>
+        </div>
+
+    </div>  
+       
+
+    <script src="script.js"></script>
+</body>
+</html>
